@@ -1,0 +1,160 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0b0b0b;
+  color: #fff;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 60px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  color: gold;
+  letter-spacing: 2px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: gold;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b') center/cover no-repeat;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+}
+
+/* HERO CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 40%;
+  transform: translateY(-40%);
+}
+
+.glow {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: gold;
+  text-shadow: 0 0 20px rgba(255,215,0,0.6);
+  animation: fadeUp 1.5s ease;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* BUTTONS */
+.gold-btn {
+  background: gold;
+  color: black;
+  padding: 12px 25px;
+  border: none;
+  margin: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gold-btn:hover {
+  background: #d4af37;
+  transform: scale(1.05);
+}
+
+.outline-btn {
+  background: transparent;
+  border: 1px solid gold;
+  color: gold;
+  padding: 12px 25px;
+  cursor: pointer;
+}
+
+.outline-btn:hover {
+  background: gold;
+  color: black;
+}
+
+/* ABOUT */
+.about {
+  padding: 100px 20px;
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.about h2 {
+  font-family: 'Playfair Display', serif;
+  color: gold;
+}
+
+/* MENU CARDS (used on food/drinks pages) */
+.menu-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 60px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,215,0,0.2);
+  padding: 25px;
+  width: 260px;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(255,215,0,0.2);
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.card span {
+  color: gold;
+  font-weight: bold;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+}
